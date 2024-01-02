@@ -72,27 +72,14 @@ a{
     font-size: 2em;
     margin-bottom: 20px;
 }
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .satsang{
     display: flex;
+    flex-wrap: wrap;
+
 }
 .satsang-video{
     margin: 2rem 1rem;
+    flex-wrap: wrap;
 
 }
 @media (max-width: 768px) {
