@@ -63,7 +63,7 @@ a{
 }
 /* Banner section styles */
 #banner {
-    height: 40vh;
+    height: 100vh;
     padding: 50px 0;
     text-align: center;
     background-color: #eee;
@@ -136,8 +136,20 @@ margin-bottom: 2rem;
     color: #666;
     margin-top: 5px;
 }
-
+.about h1{
+    text-align: center;
+    margin: 1rem 3rem;
+}
+.about p {
+    padding: 0 15rem;
+}
 @media (max-width: 768px) {
+    #banner {
+        height: 40vh;
+    }
+    .about p {
+        padding: 1rem;
+    }
     .satsang-video iframe{
         width: 300px;
     }
