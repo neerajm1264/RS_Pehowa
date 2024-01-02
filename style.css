@@ -83,6 +83,9 @@ a{
 
 }
 @media (max-width: 768px) {
+    .satsang-video iframe{
+        width: 300px;
+    }
     .nav-links {
         display: none;
     }
