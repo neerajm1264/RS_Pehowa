@@ -71,6 +71,13 @@ a{
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+.satsang-timing h1{
+    text-align: center;
+    margin: 3rem;
+}
+.satsang-timing p , .satsang-timing h3{
+text-align: center;
+}
 .quotes h1{
     text-align: center;
     margin: 2rem;
@@ -103,6 +110,31 @@ section p span{
     margin: 2rem 1rem;
     flex-wrap: wrap;
 
+}
+
+.satsang-timing {
+    text-align: center;
+    margin: 30px;
+}
+.satsang-timing h2{
+margin-bottom: 2rem;
+}
+.timing-item {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timing-item h3 {
+    color: #333;
+}
+
+.timing-item p {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
 }
 
 @media (max-width: 768px) {
