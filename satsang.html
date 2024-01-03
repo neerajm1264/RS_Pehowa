@@ -28,48 +28,95 @@
     <main class="satsang">
         <div class="satsang-video">
             <iframe width="350" height="200" src="https://www.youtube.com/embed/Ovd-hdlTkyM?si=cx2B_JstzstTAOD4"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-        <h2>Satsang</h2>
-        <p>Mar 7, 2021</p>
-    </div>
-    <div class="satsang-video">
-        <iframe width="350" height="200" src="https://www.youtube.com/embed/upRPUtOmiOw?si=_66s6G9r_1pQBOFT"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-            <h2>Satsang</h2>
-        <p>Feb 11, 2021</p>
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <h4>Satsang</h4>
+            <p>Mar 7, 2021</p>
         </div>
-        
-            <div class="satsang-video">
-        <iframe width="350" height="200" src="https://www.youtube.com/embed/1Fq48Z-0y0o?si=n4JnIcpDwI9QIkFy"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-            <h2>Satsang</h2>
-        <p>Mar 13, 2021</p>
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/upRPUtOmiOw?si=_66s6G9r_1pQBOFT"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h4>Satsang</h4>
+            <p>Feb 11, 2021</p>
         </div>
+
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/1Fq48Z-0y0o?si=n4JnIcpDwI9QIkFy"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h4>Satsang</h4>
+            <p>Mar 13, 2021</p>
+        </div>
+
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/3JHaxLc4n4M?si=kjE8yD2lXRbOk2mg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h4>Satsang </h4>
+            <p>Jan 24, 2021</p>
+        </div>
+
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/nUSgK1lPW0s?si=xDWyLtYG56qPgPpj"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h4>TAJO MANN YEH <br>DUKH SUKH KA DHAM <br>(SATSANG)</h4>
+            <p>Aug 15, 2021</p>
+        </div>
+
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/aupkkHiu_SM?si=ZF6oB1muiH2E5QKx"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h4>AUDIO SATSANG <br> (GUR KEO NA SMAR)</h4>
+            <p>Jul 24, 2021</p>
+        </div>
+
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/GfHM6jZ0oY4?si=Yg9Nyv1kU0pOXjIJ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h4>SATSANG</h4>
+            <p>Jan 1, 2021</p>
+        </div>
+
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/JQAULMNUwLM?si=DP0WS-T0npC0G6-J"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h4>SHABAD KI KARI<br> NA KOI KAMAI</h4>
+            <p>Jun 13, 2021</p>
+        </div>
+
     </main>
 </body>
 <script>
     const toggleButton = document.getElementById('toggleButton');
-const navLinks = document.getElementById('navLinks');
-const headline = document.getElementById('headline')
-const links = document.querySelectorAll('.nav-links li'); 
+    const navLinks = document.getElementById('navLinks');
+    const headline = document.getElementById('headline')
+    const links = document.querySelectorAll('.nav-links li');
 
-let previousMargin = '2rem 0'; 
+    let previousMargin = '2rem 0';
 
-toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
-});
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
 </script>
+
 </html>
