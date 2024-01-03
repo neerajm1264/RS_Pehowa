@@ -29,7 +29,7 @@ http.onload = function () {
         let quote = "";
         sakhi.forEach((item) => {
             quote += `
-            <p class="a">${item.data}</p><hr>
+            <p class="a">${item.data}</p><hr> 
             `;
         });
         document.querySelector(".quote").innerHTML = quote;
