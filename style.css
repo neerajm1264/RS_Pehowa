@@ -78,6 +78,33 @@ a{
 .satsang-timing p , .satsang-timing h3{
 text-align: center;
 }
+.satsang-timing {
+    text-align: center;
+    margin: 30px;
+}
+.satsang-timing h2{
+margin-bottom: 2rem;
+}
+#sundayTimer , #amavasyaTimer , #pournimaTimer{
+    color: #d32525;
+}
+.timing-item {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timing-item h3 {
+    color: #333;
+}
+
+.timing-item p {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
 .quotes h1{
     text-align: center;
     margin: 2rem;
@@ -98,8 +125,13 @@ section p span{
 } */
 
 #banner h2 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 20px;
+    color: ghostwhite;
+    font-weight: 700;
+}
+#banner p {
+    font-weight: 600;
 }
 .satsang{
     display: flex;
@@ -110,31 +142,6 @@ section p span{
     margin: 2rem 1rem;
     flex-wrap: wrap;
 
-}
-
-.satsang-timing {
-    text-align: center;
-    margin: 30px;
-}
-.satsang-timing h2{
-margin-bottom: 2rem;
-}
-.timing-item {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.timing-item h3 {
-    color: #333;
-}
-
-.timing-item p {
-    font-style: italic;
-    color: #666;
-    margin-top: 5px;
 }
 .about h1{
     text-align: center;
