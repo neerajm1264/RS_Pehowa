@@ -19,6 +19,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar-header {
@@ -70,6 +73,7 @@ a{
     background-image: url(assets/banner.jpeg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    margin-top: 3rem;
 }
 .satsang-timing h1{
     text-align: center;
@@ -107,7 +111,7 @@ margin-bottom: 2rem;
 }
 .quotes h1{
     text-align: center;
-    margin: 2rem;
+    margin: 5rem 2rem 2rem 2rem;
 }
 .a{
     display: block;
@@ -136,12 +140,15 @@ section p span{
 .satsang{
     display: flex;
     flex-wrap: wrap;
-
+    margin-top: 5rem;
 }
 .satsang-video{
     margin: 2rem 1rem;
     flex-wrap: wrap;
 
+}
+.about{
+    margin-top: 5rem;
 }
 .about h1{
     text-align: center;
