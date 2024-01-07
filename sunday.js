@@ -49,7 +49,7 @@ function runTimer() {
     // console.log(Math.floor(distance/(1000*3600)))
 
     if (distance <= 0) {
-        document.getElementById('sundayTimer').textContent = "Satsang start"
+        document.getElementById('sundayTimer').textContent = "Loading..."
         nextSunday.shift();
         setTimeout(runTimer, 5000);
         return;

@@ -12,7 +12,6 @@
       new Date('2024-10-17 10:00'), 
       new Date('2024-11-15 10:00'), 
       new Date('2024-12-15 10:00'), 
-  
   ]  
     const now = new Date();
     
@@ -53,7 +52,7 @@ function PrunTimer() {
     const distance = calculateTimeDifference(targetDate);
 
     if (distance <= 0) {
-        document.getElementById('pournimaTimer').textContent = "Satsang start"
+        document.getElementById('pournimaTimer').textContent = "Loading..."
         fullMoonDates.shift();
         setTimeout(PrunTimer, 5000);
         return;

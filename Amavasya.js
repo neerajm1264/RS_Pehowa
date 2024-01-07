@@ -52,7 +52,7 @@ function ArunTimer() {
     const targetDate = newMoonDates[0];
     const distance = calculateTimeDifference(targetDate);
     if (distance <= 0) {
-        document.getElementById('amavasyaTimer').textContent = "Satsang start"
+        document.getElementById('amavasyaTimer').textContent = "Loading..."
         newMoonDates.shift();
         setTimeout(ArunTimer, 5000);
         return;
