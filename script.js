@@ -1,3 +1,40 @@
+const toggleButton = document.getElementById('toggleButton');
+const navLinks = document.getElementById('navLinks');
+const headline = document.getElementById('headline')
+const links = document.querySelectorAll('.nav-links li'); 
+
+let previousMargin = '2rem 0'; 
+
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+
+const scrollThreshold = window.innerHeight * .3; // 100vh
+
+function handleScroll() {
+  let navbar = document.querySelector(".nav-links")
+  let scrollPosition = window.scrollY || window.scrollY;
+
+  if (scrollPosition <= scrollThreshold) {
+    navbar.style.top = '90px';
+    marqueeElement.style.display = "block"; 
+  } else {
+    navbar.style.top = '57px';
+    marqueeElement.style.display = "none"; 
+  }
+}
+// Add a one-time listener to handle initial display
+window.addEventListener("DOMContentLoaded", handleScroll);
+
+// Add the scroll listener to handle subsequent scrolling
+window.addEventListener("scroll", handleScroll);
+
 function calculateTimeDifference(targetDate) {
   const now = new Date().getTime();
   const distance = targetDate.getTime() - now;
