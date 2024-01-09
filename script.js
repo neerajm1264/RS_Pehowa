@@ -293,7 +293,7 @@ http.onload = function () {
     }
 }
 
-//------------------------------------ fetch satsang videos
+//------------------------------------ fetch sakhi
 
 let httpss = new XMLHttpRequest();
 
@@ -340,7 +340,6 @@ https.onload = function () {
                 allowfullscreen>
             </iframe>
             <h4>${item.h4}</h4>
-            <p>${item.p}</p>
         </div>
             `;}
         };
