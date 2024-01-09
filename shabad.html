@@ -30,28 +30,7 @@
         </ul>
         </div>
     </nav>
-    <main class="satsang">
-        <div class="satsang-video">
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/Yppzo6dTpzY?si=izlpEOT-01eqVN6v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h4>So Dukh Kaisa Paave</h4>
-        </div>
-
-        <div class="satsang-video">
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/ABb56SmcWmU?si=h5bKSD4PKKezYD0z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h4>Shukar Dateya</h4>
-        </div>    
-        
-        <div class="satsang-video">
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/ytdFPeG-p1g?si=-Pq_B8tr6_A4tD0h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
-            <h4>Aar Nanak Paar Nanak</h4>
-        </div> 
-
-        <div class="satsang-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JBajCwwaksc?si=KXb7mJTtfI7q8ERJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
-            <h4>Wah Guru </h4>
-        </div> 
-
-    </main>
+    <main class="shabad"></main>
 </body>
 <script>
     const toggleButton = document.getElementById('toggleButton');
@@ -70,6 +49,31 @@
             navLinks.classList.remove('active');
         });
     });
+
+    // ----------------------------------------------------------------
+
+    let http = new XMLHttpRequest();
+
+http.open("get", "shabad.json", true);
+
+http.send();
+
+http.onload = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        let shabad = JSON.parse(this.responseText);
+        let videos = "";
+        shabad.forEach((item) => {
+            videos += `
+       <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/${item.iframe}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>${item.h4}</h4>
+        </div>
+            `;
+        });
+        document.querySelector(".shabad").innerHTML = videos;
+    }
+}
+
 </script>
 
 </html>

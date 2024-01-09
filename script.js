@@ -259,7 +259,68 @@ function updateDisplayOrder() {
     satsangTiming.appendChild(item.element);
   });
 }
-
-// Call this function to update the display order initially and periodically
 updateDisplayOrder();
-// setInterval(updateDisplayOrder, 5000); // You might want to adjust the interval
+
+//------------------------------------ fetch satsang videos
+
+let http = new XMLHttpRequest();
+
+http.open("get", "satsang.json", true);
+
+http.send();
+
+http.onload = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        let satsang = JSON.parse(this.responseText);
+        let video = "";
+          for (let i = 0; i < satsang.length; i++) {
+            const item = satsang[i];
+          if(i < 3){
+            video += `
+            
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/${item.iframe}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <h4>${item.h4}</h4>
+            <p>${item.p}</p>
+        </div>
+            `;}
+        };
+        document.querySelector(".satsang").innerHTML = video;
+    }
+}
+
+//------------------------------------ fetch shabad videos
+
+let https = new XMLHttpRequest();
+
+https.open("get", "shabad.json", true);
+
+https.send();
+
+https.onload = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        let shabad = JSON.parse(this.responseText);
+        let video = "";
+          for (let i = 0; i < shabad.length; i++) {
+            const item = shabad[i];
+          if(i < 3){
+            video += `
+            
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/${item.iframe}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <h4>${item.h4}</h4>
+            <p>${item.p}</p>
+        </div>
+            `;}
+        };
+        document.querySelector(".shabad").innerHTML = video;
+    }
+}
