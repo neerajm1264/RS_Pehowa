@@ -160,8 +160,8 @@ section p span{
     display: flex;
     flex-wrap: wrap;
 }
-.satsang-section , .shabad-section{
-margin: 1rem 1rem ;
+.satsang-section , .shabad-section , .sakhi-section{
+margin: 3rem 1rem ;
 padding: 0 0 1rem 0;
 border: 1px solid #333333;
 box-shadow: 0 0 20px 5px black;

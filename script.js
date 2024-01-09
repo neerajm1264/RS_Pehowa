@@ -293,6 +293,29 @@ http.onload = function () {
     }
 }
 
+//------------------------------------ fetch satsang videos
+
+let httpss = new XMLHttpRequest();
+
+httpss.open("get", "sakhi.json", true);
+
+httpss.send();
+
+httpss.onload = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        let sakhi = JSON.parse(this.responseText);
+        let video = "";
+          for (let i = 0; i < sakhi.length; i++) {
+            const item = sakhi[i];
+          if(i < 3){
+            video += `
+            <p class="a">${item.data}</p><hr> 
+            `;}
+        };
+        document.querySelector(".quote").innerHTML = video;
+    }
+}
+
 //------------------------------------ fetch shabad videos
 
 let https = new XMLHttpRequest();
