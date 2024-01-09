@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Global styles */
+:root {
+    --skyblue: rgb(59 179 69);
+    --shadow: #1e9749;
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -69,7 +71,7 @@ a{
     width: 100%;
     margin-top: -37px;
     font-size: 1.5rem;
-    background-color: rgb(0, 136, 255);
+    background: var(--skyblue);
     position: fixed;
     /* top: 1px; */
     right: 0px;
@@ -100,7 +102,7 @@ text-align: center;
 margin-bottom: 2rem;
 }
 #sundayTimer , #amavasyaTimer , #pournimaTimer{
-    color: rgb(0, 136, 255);
+    color: var(--skyblue);
     font-size: 1.4rem;
 }
 .timing-item {
@@ -108,8 +110,8 @@ margin-bottom: 2rem;
      border-radius: 8px;
      padding: 15px;
      margin: 20px 0;
-     border: 0px solid rgb(0, 136, 255);
-     box-shadow: 5px 5px 10px deepskyblue;
+     border: 0px solid var(--skyblue);
+     box-shadow: 5px 5px 10px var(--shadow);
      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
@@ -156,12 +158,12 @@ section p span{
     margin: 1rem 0 0 1rem;
 }
 .satsang-section h2 ,.satsang-timing h2 ,.shabad-section h2{
-    /* border: 1px solid rgb(0, 136, 255); */
+    /* border: 1px solid var(--skyblue); */
     display: block;
     width: fit-content;
     margin: auto;
     margin-top: 5rem;
-    /* background-color:  rgb(0, 136, 255); */
+    /* background-color:  var(--skyblue); */
     color: white;
     padding: .5rem 1.5rem;
     /* box-shadow: 5px 5px 10px deepskyblue; */
@@ -173,14 +175,14 @@ section p span{
 .satsangpagebtn{
     padding: .5rem 1.5rem;
     border-radius: 1rem;
-    border: 1px solid rgb(0, 136, 255);
-    box-shadow: 5px 5px 10px deepskyblue;
+    border: 1px solid var(--skyblue);
+    box-shadow: 5px 5px 10px var(--shadow);
     background-color: black;
     display: flex;
     margin: auto;    
 }
 .satsangpagebtn a{
-    color: rgb(6, 107, 196);
+    color: var(--skyblue);
 }
 
 @media (max-width: 768px) {
@@ -223,7 +225,7 @@ section p span{
     text-align: center;
 }
 footer span {
-    color: rgb(0, 136, 255);
+    color: var(--skyblue);
 }
 
 /* footer .footer-links ul li {
