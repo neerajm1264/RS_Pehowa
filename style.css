@@ -88,11 +88,8 @@ a{
     background-size: 100% auto;
     margin-top: 6rem;
 }
-.satsang-timing h1{
-    text-align: center;
-    margin: 3rem;
-}
-.satsang-timing p , .satsang-timing h3{
+
+.timing-item p , .timing-item h3{
 text-align: center;
 }
 .satsang-timing {
@@ -110,7 +107,7 @@ margin-bottom: 2rem;
      /* background-color: #f4f4f4; */
      border-radius: 8px;
      padding: 15px;
-     margin-bottom: 20px;
+     margin: 20px 0;
      border: 0px solid rgb(0, 136, 255);
      box-shadow: 5px 5px 10px deepskyblue;
      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
@@ -156,28 +153,39 @@ section p span{
 .satsang{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin: 1rem 0 0 1rem;
 }
+.satsang-section h2 ,.satsang-timing h2 ,.shabad-section h2{
+    /* border: 1px solid rgb(0, 136, 255); */
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 5rem;
+    /* background-color:  rgb(0, 136, 255); */
+    color: white;
+    padding: .5rem 1.5rem;
+    /* box-shadow: 5px 5px 10px deepskyblue; */
+    }
 .satsang-video{
     margin: 2rem 1rem;
     flex-wrap: wrap;
 }
-.about{
-    margin-top: 5rem;
+.satsangpagebtn{
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(0, 136, 255);
+    box-shadow: 5px 5px 10px deepskyblue;
+    background-color: black;
+    display: flex;
+    margin: auto;    
 }
-.about h1{
-    text-align: center;
-    margin: 1rem 3rem;
+.satsangpagebtn a{
+    color: rgb(6, 107, 196);
 }
-.about p {
-    padding: 0 15rem;
-}
+
 @media (max-width: 768px) {
     #banner {
         height: 40vh;
-    }
-    .about p {
-        padding: 1rem;
     }
     .satsang-video iframe{
         width: 300px;
