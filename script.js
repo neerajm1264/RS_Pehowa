@@ -289,7 +289,7 @@ http.onload = function () {
         </div>
             `;}
         };
-        document.querySelector(".satsang").innerHTML = video;
+        document.querySelector(".satsangm").innerHTML = video;
     }
 }
 
@@ -321,6 +321,6 @@ https.onload = function () {
         </div>
             `;}
         };
-        document.querySelector(".shabad").innerHTML = video;
+        document.querySelector(".shabadm").innerHTML = video;
     }
 }

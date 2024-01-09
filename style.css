@@ -154,13 +154,17 @@ section p span{
 .satsang , .shabad{
     display: flex;
     flex-wrap: wrap;
-    /* margin: 3rem 0 0 1rem; */
+    margin: 3rem 0 0 1rem;
+}
+.satsangm , .shabadm{
+    display: flex;
+    flex-wrap: wrap;
 }
 .satsang-section , .shabad-section{
 margin: 1rem 1rem ;
 padding: 0 0 1rem 0;
 border: 1px solid #333333;
-box-shadow: 5px 5px 10px black;
+box-shadow: 0 0 20px 5px black;
 }
 .satsang-section h2 ,.satsang-timing h2 ,.shabad-section h2{
     /* border: 1px solid var(--skyblue); */
@@ -227,6 +231,7 @@ box-shadow: 5px 5px 10px black;
     color: #fff;
     margin: 5rem 0 0 0;
     text-align: center;
+    padding: .5rem 0 ;
 }
 footer span {
     color: var(--skyblue);
