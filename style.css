@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 :root {
-    --skyblue: rgb(59 179 69);
-    --shadow: #1e9749;
+    --skyblue: rgb(0, 136, 255);
+    --shadow: deepskyblue;
 }
 body {
     font-family: Arial, sans-serif;
@@ -112,7 +112,6 @@ margin-bottom: 2rem;
      margin: 20px 0;
      border: 0px solid var(--skyblue);
      box-shadow: 5px 5px 10px var(--shadow);
-     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .timing-item h3 {
@@ -155,7 +154,7 @@ section p span{
 .satsang , .shabad{
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0 0 1rem;
+    margin: 3rem 0 0 1rem;
 }
 .satsang-section h2 ,.satsang-timing h2 ,.shabad-section h2{
     /* border: 1px solid var(--skyblue); */
@@ -166,7 +165,6 @@ section p span{
     /* background-color:  var(--skyblue); */
     color: white;
     padding: .5rem 1.5rem;
-    /* box-shadow: 5px 5px 10px deepskyblue; */
     }
 .satsang-video{
     margin: 2rem 1rem;
@@ -182,7 +180,7 @@ section p span{
     margin: auto;    
 }
 .satsangpagebtn a{
-    color: var(--skyblue);
+    color: rgb(6, 107, 196);
 }
 
 @media (max-width: 768px) {
@@ -221,7 +219,7 @@ section p span{
  footer {
     /* background-color: #333; */
     color: #fff;
-    padding: 20px 0;
+    padding: 5rem 0 0 0;
     text-align: center;
 }
 footer span {
