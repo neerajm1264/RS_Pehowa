@@ -242,11 +242,15 @@ box-shadow: 0 0 20px 5px black;
     margin: 1rem 3rem;
 }
 .about p {
-    padding: 0 15%;
-    justify-content: center;
+padding: 1rem;
+}
+.aboutp{
+    border: 1px solid #333333;
+    box-shadow: 5px 5px 10px 10px black;
+    margin: 0 15%;
 }
 .about p span {
-    color: rgb(0, 136, 255);
+    color: var(--skyblue);
 }
 /* Footer styles */
  footer {
