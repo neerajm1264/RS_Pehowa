@@ -247,7 +247,7 @@ padding: 1rem;
 .aboutp{
     border: 1px solid #333333;
     box-shadow: 5px 5px 10px 10px black;
-    margin: 0 15%;
+    margin: 0 12%;
 }
 .about p span {
     color: var(--skyblue);
