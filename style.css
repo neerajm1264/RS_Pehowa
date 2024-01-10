@@ -230,10 +230,24 @@ box-shadow: 0 0 20px 5px black;
     .toggle-button {
         display: block;
     }
-
-
+    .about p {
+        padding: 1rem;
+    }
 }
-
+.about{
+    margin-top: 5rem;
+}
+.about h1{
+    text-align: center;
+    margin: 1rem 3rem;
+}
+.about p {
+    padding: 0 15%;
+    justify-content: center;
+}
+.about p span {
+    color: rgb(0, 136, 255);
+}
 /* Footer styles */
  footer {
     background-color: black;
