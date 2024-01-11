@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Amavasya Satsang Date 2024</title>
+    <title>Pournima Satsang Date 2024</title>
 </head>
 <style>
  .outer-card {
@@ -28,7 +28,7 @@ box-shadow: 5px 5px 10px var(--shadow);
 <body class="bg-dark">
     <nav class="bg-dark navbar">
         <div class="navbar-header">
-            <h1 class="navbar-brand text-light">Amavasya Date</h1>
+            <h1 class="navbar-brand text-light">Pournima Date</h1>
             <button id="toggleButton" class="toggle-button">☰</button>
         </div>
         <ul class="nav-links" id="navLinks">
@@ -41,10 +41,10 @@ box-shadow: 5px 5px 10px var(--shadow);
     </nav>
 
     <div class="outer-card">
-        <h2>Amavasya Date in 2024 </h2>
+        <h2>Pournima Date in 2024 </h2>
         <div id="amavasyaDatesContainer"></div>
     </div>
-    
+
 </body>
 <script>
     const toggleButton = document.getElementById('toggleButton');
@@ -65,22 +65,21 @@ box-shadow: 5px 5px 10px var(--shadow);
     });
 
     // ----------------------------------------------------------------
-// amavasya
-const newMoonDates = [
-  // Dates array for new moon events
-  new Date('2024-01-11 10:00'),
-  new Date('2024-02-09 10:00'),
-  new Date('2024-03-10 10:00'),
-  new Date('2024-04-08 10:00'),
-  new Date('2024-05-07 10:00'),
-  new Date('2024-06-06 10:00'),
-  new Date('2024-07-05 10:00'),
-  new Date('2024-08-04 10:00'),
-  new Date('2024-09-02 10:00'),
-  new Date('2024-10-02 10:00'),
-  new Date('2024-11-01 10:00'),
-  new Date('2024-11-30 10:00'),
-  new Date('2024-12-30 10:00'),
+// pournima
+const fullMoonDates = [
+  // Dates array for full moon events
+  new Date('2024-01-25 10:00'), 
+  new Date('2024-02-24 10:00'), 
+  new Date('2024-03-24 10:00'), 
+  new Date('2024-04-23 10:00'), 
+  new Date('2024-05-23 10:00'), 
+  new Date('2024-06-21 10:00'), 
+  new Date('2024-07-21 10:00'), 
+  new Date('2024-08-19 10:00'), 
+  new Date('2024-09-17 10:00'), 
+  new Date('2024-10-17 10:00'), 
+  new Date('2024-11-15 10:00'), 
+  new Date('2024-12-15 10:00'), 
 ];
 const amavasyaDatesContainer = document.getElementById('amavasyaDatesContainer');
 
@@ -91,7 +90,7 @@ const formatDate = (date) => {
 };
 
 // Append new moon dates to inner-card using backticks
-newMoonDates.forEach((date) => {
+fullMoonDates.forEach((date) => {
     const formattedDate = formatDate(date);
     amavasyaDatesContainer.innerHTML += `
     <div class="inner-card">
