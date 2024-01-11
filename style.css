@@ -172,7 +172,7 @@ padding: 0 0 1rem 0;
 border: 1px solid #333333;
 box-shadow: 0 0 20px 5px black;
 }
-.satsang-section h2 ,.satsang-timing h2 ,.shabad-section h2{
+.section-head{
     /* border: 1px solid var(--skyblue); */
     display: block;
     width: fit-content;

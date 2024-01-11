@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <title>Amavasya Satsang Date 2024</title>
+</head>
+<style>
+ .outer-card {
+    text-align: center;
+    margin: 6rem;
+    color: aliceblue;
+}
+.outer-card h2{
+margin-bottom: 2rem;
+}
+.inner-card{
+border-radius: 8px;
+padding: 15px;
+margin: 20px 0;
+border: 0px solid var(--skyblue);
+box-shadow: 5px 5px 10px var(--shadow);
+}
+</style>
+<body class="bg-dark">
+    <nav class="bg-dark navbar">
+        <div class="navbar-header">
+            <h1 class="navbar-brand text-light">Amavasya Date</h1>
+            <button id="toggleButton" class="toggle-button">☰</button>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <a href="index.html"><li>Home</li></a>
+            <a href="satsang.html"><li>Satsang</li></a>
+            <a href="shabad.html"><li>Shabad</li></a>
+            <a href="sakhi.html"><li>Sakhi</li></a>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="outer-card">
+        <h2>Amavasya Date in 2024 </h2>
+        <div id="amavasyaDatesContainer">
+            <!-- <h3>Every Sunday</h3>
+            <p id="sunday"></p>
+            <p>Timing: 09:30 AM</p> -->
+        </div>
+    </div>
+    <!-- <section class="amavasya-date">
+        <h1 style="text-align: center; padding: 1rem;">Amavasya Dates</h1>
+    <div class="outer-card">    
+        <div class="inside-card">
+            <h3>Amavasya Satsang</h3>
+        </div>
+        </div>
+
+        <div class="outer-card">    
+            <div class="inside-card">
+                <h3>Amavasya Satsang</h3>
+            </div>
+            </div>
+
+            <div class="outer-card">    
+                <div class="inside-card">
+                    <h3>Amavasya Satsang</h3>
+                </div>
+                </div>
+    </section> -->
+    
+</body>
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const navLinks = document.getElementById('navLinks');
+    const headline = document.getElementById('headline')
+    const links = document.querySelectorAll('.nav-links li');
+
+    let previousMargin = '2rem 0';
+
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // ----------------------------------------------------------------
+// amavasya
+const newMoonDates = [
+  // Dates array for new moon events
+  new Date('2024-01-11 10:00'),
+  new Date('2024-02-09 10:00'),
+  new Date('2024-03-10 10:00'),
+  new Date('2024-04-08 10:00'),
+  new Date('2024-05-07 10:00'),
+  new Date('2024-06-06 10:00'),
+  new Date('2024-07-05 10:00'),
+  new Date('2024-08-04 10:00'),
+  new Date('2024-09-02 10:00'),
+  new Date('2024-10-02 10:00'),
+  new Date('2024-11-01 10:00'),
+  new Date('2024-11-30 10:00'),
+  new Date('2024-12-30 10:00'),
+];
+const amavasyaDatesContainer = document.getElementById('amavasyaDatesContainer');
+
+// Function to format date to your preferred format
+const formatDate = (date) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+};
+
+// Append new moon dates to inner-card using backticks
+newMoonDates.forEach((date) => {
+    const formattedDate = formatDate(date);
+    amavasyaDatesContainer.innerHTML += `
+    <div class="inner-card">
+    <p>${formattedDate}</p>
+    <p> Satsang Timing 10:00 AM
+    </div>
+    `;
+});
+</script>
+</html>
