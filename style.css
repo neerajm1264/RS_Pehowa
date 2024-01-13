@@ -103,7 +103,7 @@ a{
     width: fit-content;
     display: block;
     margin: auto;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px 10px black;
 }
 .hidden{
     display: none;
@@ -136,6 +136,17 @@ a{
 .hidden{
     display: none;
 }
+.booking{
+    display: none;
+    text-align: center;
+    margin-top: 1rem;
+    border: 1px solid;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.4rem 0.6rem;
+    background: var(--skyblue);
+    box-shadow: 5px 5px 5px var(--shadow);
+}
 #naam , #paisa , #no{
     text-align: center;
     color: var(--skyblue);
@@ -154,6 +165,7 @@ text-align: center;
 }
 .satsang-timing h2{
 margin-bottom: 2rem;
+color: var(--skyblue);
 }
 #sundayTimer , #amavasyaTimer , #pournimaTimer{
     color: var(--skyblue);
@@ -258,7 +270,7 @@ box-shadow: 0 0 20px 5px black;
         height: 30vh;
     }
     .notice-content{
-        margin: 1rem 2rem;
+        margin: 3rem 2rem;
     }
     .map iframe {
         height: 400px;

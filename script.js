@@ -371,6 +371,8 @@ function generateQRCode() {
   // document.querySelector('.notice-content').classList.add('hidden')
   document.querySelector('.inputfield').classList.add('hidden');
 
+  document.querySelector('.booking').style.display = 'block'
+
   document.querySelector('.naam').style.display = 'block'
 
   document.getElementById('naam').innerText = `${name}`
