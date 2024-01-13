@@ -51,7 +51,6 @@
                 <p>गाड़ी 31 मार्च को सुबह 3 बजे चलेगी। जो भी संगत जाना चाहती है, वह 26 मार्च से पहले ही सीट बुक करा लें।
                 </p>
                 <p>राधा स्वामी जी</p>
-
                 <div class="inputfield">
                     <label for="name">Name</label>
                     <input type="text" id="name" oninput="validateName()" placeholder="Enter your Name...">
@@ -62,8 +61,8 @@
 
                     <button onclick="generateQRCode()" id="btn">Next</button>
                 </div>
-              <p>
-                <span id="naam"></span>
+              <p class="naam">
+                <span id="naam" ></span>
                  ji Please Scan 
                  <span id="paisa"></span>
                   rupees to book your
@@ -73,7 +72,9 @@
                 <div id="qrcode" style="display: none;">
                     <img src="assets/qr.jpeg" alt="QR-CODE">
                 </div>
-                <div id="note"></div>
+                <div id="note">
+                    <p> <span style="color: rgb(0, 136, 255);">Note:</span> After scanning the QR code, kindly send a screenshot of your payment to this whatsapp number - <span style="color: rgb(0, 136, 255);">70158-23645.</span></p>
+                </div>
             </div>
 
         </section>

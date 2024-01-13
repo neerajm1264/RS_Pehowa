@@ -371,6 +371,8 @@ function generateQRCode() {
   // document.querySelector('.notice-content').classList.add('hidden')
   document.querySelector('.inputfield').classList.add('hidden');
 
+  document.querySelector('.naam').style.display = 'block'
+
   document.getElementById('naam').innerText = `${name}`
 
   document.getElementById('paisa').innerText = `${amount}`
@@ -379,7 +381,8 @@ function generateQRCode() {
 
   document.getElementById('qrcode').style.display = 'flex';
        
-  document.getElementById('note').textContent = 'Note: Please contact on 70158-23645 for More Information'
+  document.getElementById('note').style.display = 'flex'
+
 }
 
 function validateNumber() {

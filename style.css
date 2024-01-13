@@ -139,6 +139,11 @@ a{
 #naam , #paisa , #no{
     text-align: center;
     color: var(--skyblue);
+    font-size: 1.4rem;
+}
+.naam{
+    display: none;
+    text-align: center;
 }
 .timing-item p , .timing-item h3{
 text-align: center;
