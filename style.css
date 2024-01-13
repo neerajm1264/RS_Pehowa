@@ -156,6 +156,16 @@ a{
     display: none;
     text-align: center;
 }
+.whatsapp-btn{
+    display: none;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    margin: auto;
+    background: transparent;
+    color: var(--skyblue);
+    box-shadow: 5px 5px 5px var(--shadow);
+    border: none;
+}
 .timing-item p , .timing-item h3{
 text-align: center;
 }

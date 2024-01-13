@@ -375,6 +375,8 @@ function generateQRCode() {
 
   document.querySelector('.naam').style.display = 'block'
 
+  document.querySelector('.whatsapp-btn').style.display = 'block'
+
   document.getElementById('naam').innerText = `${name}`
 
   document.getElementById('paisa').innerText = `${amount}`
