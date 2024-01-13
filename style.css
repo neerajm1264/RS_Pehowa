@@ -91,6 +91,55 @@ a{
     margin-top: 6rem;
 }
 
+
+.notice h2{
+    color: var(--skyblue);
+    margin: 3rem;
+    text-align: center;
+}
+ .notice-content{
+    border: 1px solid #333333;
+    padding: 2rem 1rem;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+.hidden{
+    display: none;
+}
+.inputfield{
+    display: flex;
+    flex-direction: column;
+}
+.inputfield input{
+    background-color: #333;
+    color: #eee;
+    border: none;
+    padding: .2rem;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+#btn{
+    padding: .3rem .6rem;
+    margin-left: auto;
+}
+#qrcode img{
+    width: 50%;
+    height: 50%;
+    margin: 2rem auto;
+}
+#note {
+    display: none;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+#naam , #paisa , #no{
+    text-align: center;
+    color: var(--skyblue);
+}
 .timing-item p , .timing-item h3{
 text-align: center;
 }
@@ -202,6 +251,9 @@ box-shadow: 0 0 20px 5px black;
 @media (max-width: 768px) {
     #banner {
         height: 30vh;
+    }
+    .notice-content{
+        margin: 1rem 2rem;
     }
     .map iframe {
         height: 400px;

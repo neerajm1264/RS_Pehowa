@@ -43,6 +43,41 @@
     <main id="home">
         <section id="banner" class="bg-dark text-light"></section>
 
+        <section class="notice">
+            <h2>Notice</h2>
+            <div class="notice-content">
+                <p>जो भी भाई बहन फिरोजपुर देरे जाना चाहते हैं, वह नीचे दिए गए विकल्पों में अपना नाम दर्ज करें और सीट बुक
+                    करें।</p>
+                <p>गाड़ी 31 मार्च को सुबह 3 बजे चलेगी। जो भी संगत जाना चाहती है, वह 26 मार्च से पहले ही सीट बुक करा लें।
+                </p>
+                <p>राधा स्वामी जी</p>
+
+                <div class="inputfield">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" oninput="validateName()" placeholder="Enter your Name...">
+                    <label for="number">Number of Persons</label>
+                    <input type="text" id="number" placeholder="Number of persons..." oninput="validateNumber()">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" placeholder="Amount..." readonly>
+
+                    <button onclick="generateQRCode()" id="btn">Next</button>
+                </div>
+              <p>
+                <span id="naam"></span>
+                 ji Please Scan 
+                 <span id="paisa"></span>
+                  rupees to book your
+                   <span id="no"></span>
+                    seat. Radha Swami Ji
+                </p>
+                <div id="qrcode" style="display: none;">
+                    <img src="assets/qr.jpeg" alt="QR-CODE">
+                </div>
+                <div id="note"></div>
+            </div>
+
+        </section>
+
         <div class="satsang-timing">
             <h2>Upcoming Satsang </h2>
             <div class="timing-item">
@@ -51,23 +86,23 @@
                 <p id="sunday"></p>
                 <p>Timing: 09:30 AM</p>
             </div>
-          
+
             <div class="timing-item">
                 <a href="amavasya.html">
-                <h3>Amavasya Satsang</h3>
-                <p id="amavasyaTimer"></p>
-                <p id="amavasya"></p>
-                <p>Timing: 10:00 AM</p>
+                    <h3>Amavasya Satsang</h3>
+                    <p id="amavasyaTimer"></p>
+                    <p id="amavasya"></p>
+                    <p>Timing: 10:00 AM</p>
             </div>
-        </a>
+            </a>
             <div class="timing-item">
                 <a href="pournima.html">
-                <h3>Pournima Satsang</h3>
-                <p id="pournimaTimer"></p>
-                <p id="pournima"></p>
-                <p>Timing: 10:00 AM</p>
+                    <h3>Pournima Satsang</h3>
+                    <p id="pournimaTimer"></p>
+                    <p id="pournima"></p>
+                    <p>Timing: 10:00 AM</p>
             </div>
-        </a>
+            </a>
         </div>
 
         <section id="address" class="address">
@@ -83,7 +118,7 @@
         </section>
         <h2 class="section-head">Satsang Videos</h2>
         <section class="satsang-section bg-dark" id="satsang">
-            
+
             <div class="satsangm"> </div>
             <button class="satsangpagebtn"><a href="satsang.html">More videos</a></button>
         </section>
@@ -104,13 +139,14 @@
         <section class="about" id="about">
             <h1 style="color: rgb(0, 136, 255);">About me</h1>
             <div class="aboutp">
-            <p>This is an Unofficial and Non Profitable blog for Radha swami Sangat. This blog is maintained by Baba
-                Ji's Lovers. You can find here satsang videos, shabads and many more related to Radha
-                Swami dera, Ferozepur. For any Queries or Support please mail us at <br><span>Email:</span>
-                manchandaneeraj396@gmail.com <br><span>Contact:</span> 70158-23645
-                <br> </p>
-            <p style="text-align: center; font-size: 1.4rem;">Radha Soami Ji</p> 
-        </div>
+                <p>This is an Unofficial and Non Profitable blog for Radha swami Sangat. This blog is maintained by Baba
+                    Ji's Lovers. You can find here satsang videos, shabads and many more related to Radha
+                    Swami dera, Ferozepur. For any Queries or Support please mail us at <br><span>Email:</span>
+                    manchandaneeraj396@gmail.com <br><span>Contact:</span> 70158-23645
+                    <br>
+                </p>
+                <p style="text-align: center; font-size: 1.4rem;">Radha Soami Ji</p>
+            </div>
         </section>
 
         <footer>

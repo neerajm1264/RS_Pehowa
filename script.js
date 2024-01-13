@@ -346,3 +346,48 @@ https.onload = function () {
         document.querySelector(".shabadm").innerHTML = video;
     }
 }
+
+//---------------------------------------------------------------
+function calculateAmount() {
+  // Get the value entered in the "number" input field
+  const numberOfPersons = document.getElementById('number').value;
+
+  // Calculate the amount by multiplying the number of persons by 600
+  const calculatedAmount = numberOfPersons * 600;
+
+  // Display the calculated amount in the "amount" input field
+  document.getElementById('amount').value = calculatedAmount;
+}
+
+function generateQRCode() {
+    const name = document.getElementById('name').value;
+    const number = document.getElementById('number').value;
+    const amount = document.getElementById('amount').value;
+
+    if (!name || !number) {
+    alert('Please fill in all the required fields.');
+    return;
+  }
+  // document.querySelector('.notice-content').classList.add('hidden')
+  document.querySelector('.inputfield').classList.add('hidden');
+
+  document.getElementById('naam').innerText = `${name}`
+
+  document.getElementById('paisa').innerText = `${amount}`
+
+  document.getElementById('no').innerText = `${number}`
+
+  document.getElementById('qrcode').style.display = 'flex';
+       
+  document.getElementById('note').textContent = 'Note: Please contact on 70158-23645 for More Information'
+}
+
+function validateNumber() {
+  const numberInput = document.getElementById('number');
+  numberInput.value = numberInput.value.replace(/[^\d]/g, ''); // Remove non-numeric characters
+  calculateAmount();
+}
+function validateName() {
+  const nameInput = document.getElementById('name');
+  nameInput.value = nameInput.value.replace(/[^A-Za-z ]/g, ''); // Remove non-alphabetic characters
+}
