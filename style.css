@@ -140,17 +140,19 @@ a{
     display: none;
     text-align: center;
     margin-top: 1rem;
-    border: 1px solid;
+    /* border: 1px solid; */
     width: fit-content;
     margin: 2rem auto;
     padding: 0.4rem 0.6rem;
-    background: var(--skyblue);
+    background: transparent;
     box-shadow: 5px 5px 5px var(--shadow);
+    color: var(--skyblue);
+    border-radius: 1rem;
 }
 #naam , #paisa , #no{
     text-align: center;
     color: var(--skyblue);
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
 }
 .naam{
     display: none;
@@ -161,8 +163,8 @@ a{
     padding: 0.3rem 1rem;
     border-radius: 1rem;
     margin: auto;
-    background: transparent;
-    color: var(--skyblue);
+    background: var(--skyblue);
+    color: white;
     box-shadow: 5px 5px 5px var(--shadow);
     border: none;
 }
