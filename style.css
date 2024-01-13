@@ -90,13 +90,6 @@ a{
     background-size: 100% auto;
     margin-top: 6rem;
 }
-
-
-.notice h2{
-    color: var(--skyblue);
-    margin: 3rem;
-    text-align: center;
-}
  .notice-content{
     border: 1px solid #333333;
     padding: 2rem 1rem;
@@ -112,17 +105,26 @@ a{
     display: flex;
     flex-direction: column;
 }
-.inputfield input{
+.inputfield input {
     background-color: #333;
     color: #eee;
     border: none;
-    padding: .2rem;
+    padding: 0.2rem 0.5rem;
     font-size: .8rem;
     margin-bottom: 1rem;
+    border-radius: 1rem;
 }
-#btn{
-    padding: .3rem .6rem;
-    margin-left: auto;
+.inputfield label {
+    margin-left: 0.5rem;
+}
+#btn {
+    padding: 0.3rem 0.6rem;
+    margin: 1rem 0 0 auto;
+    background: var(--skyblue);
+    box-shadow: 5px 5px 5px var(--shadow);
+    border: none;
+    border-radius: 0.6rem;
+    color: white;
 }
 #qrcode img{
     width: 50%;
@@ -175,10 +177,6 @@ text-align: center;
     text-align: center;
     margin: 30px;
 }
-.satsang-timing h2{
-margin-bottom: 2rem;
-color: var(--skyblue);
-}
 #sundayTimer , #amavasyaTimer , #pournimaTimer{
     color: var(--skyblue);
     font-size: 1.4rem;
@@ -219,10 +217,15 @@ color: var(--skyblue);
 #banner p {
     font-weight: 600;
 }
-.address h2{
+.address h2 , .satsang-timing h2 , .notice h2 , .section-head , .about h1 {
     text-align: center;
     margin-top: 4rem;
     color: var(--skyblue);
+    box-shadow: 5px 5px 5px var(--shadow);
+    width: fit-content;
+    margin: 3rem auto;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
 }
 .address .map h4{
     padding: 2rem 0;
@@ -250,16 +253,6 @@ padding: 0 0 1rem 0;
 border: 1px solid #333333;
 box-shadow: 0 0 20px 5px black;
 }
-.section-head{
-    /* border: 1px solid var(--skyblue); */
-    display: block;
-    width: fit-content;
-    margin: auto;
-    margin-top: 5rem;
-    /* background-color:  var(--skyblue); */
-    color: var(--skyblue);
-    padding: .5rem 1.5rem;
-    }
 .satsang-video{
     margin: 2rem 1rem;
     flex-wrap: wrap;
@@ -269,9 +262,11 @@ box-shadow: 0 0 20px 5px black;
     border-radius: 1rem;
     border: 1px solid var(--skyblue);
     box-shadow: 5px 5px 10px var(--shadow);
-    background-color: black;
+    background-color: var(--skyblue);
     display: flex;
-    margin: auto;    
+    margin: auto;
+    color: white;
+    border: none;  
 }
 .satsangpagebtn a{
     color: rgb(6, 107, 196);
@@ -317,10 +312,6 @@ box-shadow: 0 0 20px 5px black;
 }
 .about{
     margin-top: 5rem;
-}
-.about h1{
-    text-align: center;
-    margin: 1rem 3rem;
 }
 .about p {
 padding: 1rem;
