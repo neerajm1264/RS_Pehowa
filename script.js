@@ -418,4 +418,7 @@ function validateName() {
   nameInput.value = nameInput.value.replace(/[^A-Za-z ]/g, ''); // Remove non-alphabetic characters
 }
 
-
+let link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'custom.css';
+document.querySelector('head').appendChild(link);
