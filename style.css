@@ -90,6 +90,9 @@ a{
     background-size: 100% auto;
     margin-top: 6rem;
 }
+#loading{
+    color: var(--skyblue);
+}
  .notice-content{
     border: 1px solid #333333;
     padding: 2rem 1rem;
@@ -154,7 +157,7 @@ a{
 #naam , #paisa , #no{
     text-align: center;
     color: var(--skyblue);
-    /* font-size: 1.4rem; */
+    font-weight: 900;
 }
 .naam{
     display: none;

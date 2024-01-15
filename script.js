@@ -1,3 +1,22 @@
+function updateLoadingText() {
+  var loadingElement = document.getElementById('loading');
+  var loadingText = loadingElement.innerHTML;
+
+  if (loadingText === 'Loading.') {
+      loadingElement.innerHTML = 'Loading..';
+  } else if (loadingText === 'Loading..') {
+      loadingElement.innerHTML = 'Loading...';
+  } else {
+      loadingElement.innerHTML = 'Loading.';
+  }
+
+  // Repeat the process after 1000ms (1 second)
+  setTimeout(updateLoadingText, 500);
+}
+
+// Start the loading text sequence
+setTimeout(updateLoadingText, 1000);
+
 const toggleButton = document.getElementById('toggleButton');
 const navLinks = document.getElementById('navLinks');
 const headline = document.getElementById('headline')
@@ -398,3 +417,5 @@ function validateName() {
   const nameInput = document.getElementById('name');
   nameInput.value = nameInput.value.replace(/[^A-Za-z ]/g, ''); // Remove non-alphabetic characters
 }
+
+
