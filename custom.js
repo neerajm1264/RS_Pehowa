@@ -21,4 +21,4 @@ function updateLoadingText(){var e=document.getElementById("loading"),t=e.innerH
             </iframe>
             <h4>${a.h4}</h4>
         </div>
-            `)}document.querySelector(".shabadm").innerHTML=t}};let link=document.createElement("link");link.rel="stylesheet",link.href="style.css",document.querySelector("head").appendChild(link);
+            `)}document.querySelector(".shabadm").innerHTML=t}};let link=document.createElement("link");link.rel="stylesheet",link.href="custom.css",document.querySelector("head").appendChild(link);
