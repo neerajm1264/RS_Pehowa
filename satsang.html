@@ -29,16 +29,16 @@
 <script>
 const toggleButton=document.getElementById("toggleButton"),navLinks=document.getElementById("navLinks"),headline=document.getElementById("headline"),links=document.querySelectorAll(".nav-links li");let previousMargin="2rem 0";toggleButton.addEventListener("click",()=>{navLinks.classList.toggle("active")}),links.forEach(e=>{e.addEventListener("click",()=>{navLinks.classList.remove("active")})});let http=new XMLHttpRequest;http.open("get","satsang1801.json",!0),http.send(),http.onload=function(){if(4==this.readyState&&200==this.status){let e=JSON.parse(this.responseText),t="";e.forEach(e=>{t+=`
             
-            <div class="satsang-video">
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/${e.iframe}"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-                <h4>${e.h4}</h4>
-                <p>${e.p}</p>
-            </div>
-                `}),document.querySelector(".satsang").innerHTML=t}};
+        <div class="satsang-video">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/${e.iframe}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <h4>${e.h4}</h4>
+            <p>${e.p}</p>
+        </div>
+            `}),document.querySelector(".satsang").innerHTML=t}};
 </script>
 
 </html>
