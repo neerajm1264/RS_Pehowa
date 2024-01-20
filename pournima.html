@@ -47,9 +47,9 @@ box-shadow: 5px 5px 10px var(--shadow);
 
 </body>
 <script>
-   const toggleButton=document.getElementById("toggleButton"),navLinks=document.getElementById("navLinks"),headline=document.getElementById("headline"),links=document.querySelectorAll(".nav-links li");let previousMargin="2rem 0";toggleButton.addEventListener("click",()=>{navLinks.classList.toggle("active")}),links.forEach(e=>{e.addEventListener("click",()=>{navLinks.classList.remove("active")})});const fullMoonDates=[new Date("2024-01-25 10:00"),new Date("2024-02-24 10:00"),new Date("2024-03-24 10:00"),new Date("2024-04-23 10:00"),new Date("2024-05-23 10:00"),new Date("2024-06-21 10:00"),new Date("2024-07-21 10:00"),new Date("2024-08-19 10:00"),new Date("2024-09-17 10:00"),new Date("2024-10-17 10:00"),new Date("2024-11-15 10:00"),new Date("2024-12-15 10:00"),],amavasyaDatesContainer=document.getElementById("amavasyaDatesContainer"),formatDate=e=>{let $={year:"numeric",month:"long",day:"numeric"};return e.toLocaleDateString("en-US",$)};fullMoonDates.forEach(e=>{let $=formatDate(e);amavasyaDatesContainer.innerHTML+=`
+  const toggleButton=document.getElementById("toggleButton"),navLinks=document.getElementById("navLinks"),headline=document.getElementById("headline"),links=document.querySelectorAll(".nav-links li");let previousMargin="2rem 0";toggleButton.addEventListener("click",()=>{navLinks.classList.toggle("active")}),links.forEach($=>{$.addEventListener("click",()=>{navLinks.classList.remove("active")})});const fullMoonDates=[new Date("2024-01-25 10:00"),new Date("2024-02-24 10:00"),new Date("2024-03-24 10:00"),new Date("2024-04-23 10:00"),new Date("2024-05-23 10:00"),new Date("2024-06-21 10:00"),new Date("2024-07-21 10:00"),new Date("2024-08-19 10:00"),new Date("2024-09-17 10:00"),new Date("2024-10-17 10:00"),new Date("2024-11-15 10:00"),new Date("2024-12-15 10:00"),],amavasyaDatesContainer=document.getElementById("amavasyaDatesContainer");fullMoonDates.forEach($=>{let e=$.toDateString();amavasyaDatesContainer.innerHTML+=`
     <div class="inner-card">
-    <p>${$}</p>
+    <p>${e}</p>
     <p> Satsang Timing 10:00 AM
     </div>
     `});
